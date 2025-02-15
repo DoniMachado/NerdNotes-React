@@ -1,0 +1,118 @@
+#login {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-weak-color);
+  color: var(--primary-weak-text-color);
+  padding: 10px;
+  font-size: clamp(1em, 1vw, 1.5em);
+  font-weight: bolder;
+  gap: 20px;
+}
+
+#login_error {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--error);
+  color: var(--white);
+  font-size: clamp(2em, 1vw, 2.5em);
+  padding: 10px;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px var(--error);
+  text-transform: uppercase;
+  text-indent: 0.8em;
+  width: 100%;
+}
+
+#login_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--primary-weak-color);
+  font-size: clamp(1em, 1vw, 1.5em);
+  font-weight: bolder;
+  padding: 10px;
+  gap: 10px;
+  border: 1px solid var(--primary-weak-text-color);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px var(--primary-weak-text-color);
+  width: 100%;
+}
+
+#login_button {
+  color: var(--primary-strong-text-color);
+  background-color: var(--primary-strong-color);
+  padding: 10px;
+  border: 1px solid var(--primary-strong-text-color);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: clamp(1em, 1vw, 1.3em);
+  font-weight: bolder;
+}
+
+.login_input_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.login_password_icon {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  color: var(--primary-strong-color);
+  font-size: clamp(1.3em, 1vw, 1.5em);
+}
+
+.login_input {
+  width: 100%;
+  color: var(--black);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.login_input_error {
+  font-size: clamp(0.8em, 1vw, 1em);
+  font-weight: bolder;
+  color: var(--error);
+}
+
+.login_input_empty {
+  border-color: var(--error);
+}
+
+@media (orientation: landscape) and (min-width: 700px) {
+  #login_content,
+  #login_error {
+    width: 60%;
+  }
+}
+
+@media (pointer: fine) {
+  #login_button:hover {
+    color: var(--primary-weak-text-color);
+    background-color: var(--primary-weak-color);
+    border-color: var(--primary-weak-text-color);
+    cursor: pointer;
+  }
+
+  .login_password_icon:hover {
+    color: var(--primary-weak-color);
+  }
+}

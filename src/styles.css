@@ -1,0 +1,59 @@
+:root {
+  --white: #fffefa;
+  --black: #000000;
+  --disabled: gray;
+  --error: rgb(230, 10, 10);
+  --alert: rgb(247, 224, 22);
+  --info: rgb(10, 142, 230);
+  --sucess: rgb(7, 218, 7);
+
+  --primary-strong-color-light: #9706bb;
+  --primary-strong-text-color-light: #fffefa;
+  --primary-strong-text-hover-light: #000000;
+
+  --primary-weak-color-light: #f0b0ea;
+  --primary-weak-text-color-light: #000000;
+  --primary-weak-text-hover-light: #fffefa;
+
+  --primary-strong-color-dark: #470657;
+  --primary-strong-text-color-dark: #fffefa;
+  --primary-strong-text-hover-dark: #000000;
+
+  --primary-weak-color-dark: #94108d;
+  --primary-weak-text-color-dark: #fffefa;
+  --primary-weak-text-hover-dark: #000000;
+
+  --primary-strong-color: var(--primary-strong-color-light);
+  --primary-strong-text-color: var(--primary-strong-text-color-light);
+  --primary-strong-text-hover: var(--primary-strong-text-hover-light);
+
+  --primary-weak-color: var(--primary-weak-color-light);
+  --primary-weak-text-color: var(--primary-weak-text-color-light);
+  --primary-weak-text-hover: var(--primary-weak-text-hover-light);
+}
+
+.App.light-theme {
+  --primary-strong-color: var(--primary-strong-color-light);
+  --primary-strong-text-color: var(--primary-strong-text-color-light);
+  --primary-strong-text-hover: var(--primary-strong-text-hover-light);
+
+  --primary-weak-color: var(--primary-weak-color-light);
+  --primary-weak-text-color: var(--primary-weak-text-color-light);
+  --primary-weak-text-hover: var(--primary-weak-text-hover-light);
+}
+
+.App.dark-theme {
+  --primary-strong-color: var(--primary-strong-color-dark);
+  --primary-strong-text-color: var(--primary-strong-text-color-dark);
+  --primary-strong-text-hover: var(--primary-strong-text-hover-dark);
+
+  --primary-weak-color: var(--primary-weak-color-dark);
+  --primary-weak-text-color: var(--primary-weak-text-color-dark);
+  --primary-weak-text-hover: var(--primary-weak-text-hover-dark);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

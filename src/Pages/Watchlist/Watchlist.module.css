@@ -1,0 +1,18 @@
+#watchlist {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--primary-weak-color);
+  color: var(--primary-weak-text-color);
+  padding-top: 10px;
+}
+#watchlist_tabs button {
+  color: var(--primary-weak-text-color);
+  font-weight: bolder;
+}
+
+#watchlist_tabs span[class*="MuiTabs-indicator"] {
+  background-color: var(--primary-weak-text-color);
+}
